@@ -1,0 +1,8 @@
+{
+    "GLOBAL": {
+        "LOGIN":{
+            "USER": "Usuario",
+            "PASSWORD": "Contraseña"
+        }
+    }
+}
