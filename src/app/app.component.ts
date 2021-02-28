@@ -7,12 +7,6 @@ import { Component, Output } from '@angular/core';
 })
 export class AppComponent {
 
-  checkLogout: boolean = true;
-
-  setLogin(){
-    
-    this.checkLogout = false;
-  }
-
+ 
   title = 'rolcode';
 }

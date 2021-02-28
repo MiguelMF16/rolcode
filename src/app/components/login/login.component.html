@@ -4,12 +4,13 @@
         <div class=" col-1"> Contraseña </div>
     </div>
     <div class="row">
-        <input class="col-1" type="text">
-        <input class="col-1" type="password">
-        
+        <form formControlName="loginUser">
+            <input id="usuario" class="col-1" type="text" formControlName="usuario">
+            <input id="password" class="col-1" type="password" formControlName="password">
+        </form>
     </div>
     <div>
-        <button type="cancel">
+        <button type="cancel" (click)="getClientes()">
             Cancelar
         </button>
         <button (click)="setLogin()">

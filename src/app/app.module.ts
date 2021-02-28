@@ -8,6 +8,9 @@ import { Campaign1Component } from './components/histories/campaign1/campaign1.c
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateModule } from '@ngx-translate/core';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -15,13 +18,16 @@ import { TranslateModule } from '@ngx-translate/core';
   declarations: [
     AppComponent,
     LoginComponent,
-    Campaign1Component
+    Campaign1Component,
+    HeaderComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     InputsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
